@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/CivMCMelvera/CivMCMelvera.github.io#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "govuk-frontend": "^5.11.1",
-    "nunjucks": "^3.2.4",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
     "sass": "^1.89.2"
   }
 }
