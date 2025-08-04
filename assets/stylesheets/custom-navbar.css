@@ -1,14 +1,18 @@
 .custom-navbar {
   background: #111211;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em 2em;
-  font-family: Arial, sans-serif;
+  padding: 0.5em 0;
+  font-family: Monaco, monospace;
 }
 
-.nav-left {
+.custom-navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+}
+
+.navbar-left {
   display: flex;
   align-items: center;
 }
@@ -16,26 +20,30 @@
 .nav-logo {
   height: 2em;
   margin-right: 0.5em;
+  vertical-align: middle;
 }
 
 .nav-title {
   font-size: 2em;
   font-weight: bold;
   color: #fff;
+  vertical-align: middle;
 }
 
-.nav-right {
+.navbar-right {
   display: flex;
-  gap: 1.5em;
+  align-items: center;
+  gap: 2em;
 }
 
-.nav-right a {
+.navbar-right a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
   transition: color 0.2s;
 }
-.nav-right a:hover {
+
+.navbar-right a:hover {
   color: #ddd;
 }
