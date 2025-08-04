@@ -3,7 +3,7 @@ const fs = require('fs');
 
 // Add views and GOV.UK macro path
 nunjucks.configure([
-  'app/views',
+  'views',
   'node_modules/govuk-frontend/dist'
 ]);
 
