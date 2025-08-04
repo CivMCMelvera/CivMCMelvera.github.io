@@ -1,0 +1,41 @@
+.custom-navbar {
+  background: #111211;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  font-family: Arial, sans-serif;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 2em;
+  margin-right: 0.5em;
+}
+
+.nav-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.nav-right a:hover {
+  color: #ddd;
+}

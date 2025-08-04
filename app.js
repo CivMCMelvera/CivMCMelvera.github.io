@@ -19,7 +19,7 @@ nunjucks.configure([
 // Home route
 app.get('/', (req, res) => {
   res.render('index.njk', {
-    pageTitle: "Welcome to My GOV.UK Site",
+    pageTitle: "Home - Melvera",
     username: "Citizen",
     items: ['One', 'Two', 'Three']
   });
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 // About page example
 app.get('/about', (req, res) => {
   res.render('index.njk', {
-    pageTitle: "About - GOV.UK Example",
+    pageTitle: "About - Melvera",
     username: "About Visitor",
     items: ['Alpha', 'Beta', 'Gamma']
   });

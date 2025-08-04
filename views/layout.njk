@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ pageTitle or "CivMC Melvera" }}</title>
-  <link rel="stylesheet" href="/assets/stylesheets/govuk-frontend.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/govuk-frontend.min.css">
   <!-- Your custom CSS can go here if needed -->
+  <link rel="stylesheet" href="assets/stylesheets/custom-navbar.css">
+  {% include "partials/navbar.html" %}
 </head>
 <body class="govuk-template__body">
   <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
