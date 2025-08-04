@@ -1,17 +1,42 @@
-{% extends "govuk/template.njk" %}
-{% block head %}
-  <link rel="stylesheet" href="/stylesheets/govuk-frontend.min.css">
-{% endblock %}
+{% extends "layout.njk" %}
 
 {% block content %}
-  <h1 class="govuk-heading-xl">Default page template</h1>
-{% endblock %}
-
-{% block bodyEnd %}
-  {# Run JavaScript at end of the <body>, to avoid blocking the initial render. #}
-  <script type="module" src="/javascripts/govuk-frontend.min.js"></script>
-  <script type="module">
-    import { initAll } from '/javascripts/govuk-frontend.min.js'
-    initAll()
-  </script>
+<div class="govuk-width-container">
+  <h1 class="govuk-heading-xl">Welcome to Melvera</h1>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-summary-card" style="margin-bottom: 2em;">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">About Melvera</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <p class="govuk-body">Learn about what Melvera!</p>
+          <a href="/about" class="govuk-link">About Melvera</a>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-summary-card" style="margin-bottom: 2em;">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Laws and Documents</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <p class="govuk-body">See Melvera's laws, constitution, and other documents!</p>
+          <a href="/laws" class="govuk-link">Laws and Documents</a>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-summary-card" style="margin-bottom: 2em;">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Officials</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <p class="govuk-body">See and get in touch with Melvera's officials!</p>
+          <a href="/officials" class="govuk-link">Officials</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

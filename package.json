@@ -2,8 +2,12 @@
   "name": "civmcmelvera.github.io",
   "version": "1.0.0",
   "description": "Web package",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "build:sass": "sass public/styles/main.scss public/styles/main.css",
+    "copy:govuk": "xcopy /E /I /Y .\\node_modules\\govuk-frontend\\dist\\govuk\\assets .\\public\\assets",
+	"copy:govuk:css": "cpx \"node_modules/govuk-frontend/dist/govuk/govuk-frontend.min.css\" public/assets/stylesheets/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
