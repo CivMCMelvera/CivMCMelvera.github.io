@@ -1,20 +1,22 @@
+
 <!DOCTYPE html>
-<html lang="en" class="govuk-template"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en" class="govuk-template">
+<head>
+  <meta charset="UTF-8">
   <title>News - Melvera</title>
   <link rel="icon" href="/assets/images/icon.png" type="image/png">
-  <link rel="stylesheet" href="/news/news_files/govuk-frontend.min.css">
-  <link rel="stylesheet" href="/news/news_files/custom-navbar.css">
-  <link rel="stylesheet" href="/news/news_files/info-cards.css">
+  <link rel="stylesheet" href="/assets/stylesheets/govuk-frontend.min.css">
+  <link rel="stylesheet" href="/assets/stylesheets/custom-navbar.css">
+  <link rel="stylesheet" href="/assets/stylesheets/info-cards.css">
 </head>
-<body class="govuk-template__body" data-new-gr-c-s-check-loaded="14.1247.0" data-gr-ext-installed="">
-  <a href="/news#main-content" class="govuk-skip-link">Skip to main content</a>
+<body class="govuk-template__body">
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
   <!-- Replace the logo src and links as needed -->
 <div class="custom-navbar">
   <div class="govuk-width-container custom-navbar-inner">
     <div class="navbar-left">
       <a href="/" class="nav-home-link">
-        <img src="/news/news_files/navbarlogo.png" alt="Melvera site logo" class="nav-logo">
+        <img src="assets/images/navbarlogo.png" alt="Melvera site logo" class="nav-logo" />
         <span class="nav-title">Melvera</span>
       </a>
     </div>
@@ -22,7 +24,7 @@
       <a href="/about">About</a>
       <a href="/news">News</a>
       <a href="/documents">Documents</a>
-      <a href="/officials">Officials &amp; Contact</a>
+      <a href="/officials">Officials & Contact</a>
     </nav>
   </div>
 </div>
@@ -30,33 +32,47 @@
     
 <div class="govuk-width-container">
   <h1 class="govuk-heading-xl">News</h1>
-  <p class="govuk-body">Latest news goes here.</p>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+		<div class="info-card">
+			<div class="info-card-internal">
+				<div class="info-card-content">
+        	<div class="info-card-body">
+						August 6th, 2025
+					</div>
+					<div class="info-card-title">
+						<b>The Ingens Melvera has been ratified!</b>
+					</div>
+					<div class="info-card-supplement">
+						<details class="govuk-details info-details" data-module="govuk-details">
+							<summary class="govuk-details__summary">
+								<span class="govuk-details__summary-text">Open story</span>
+							</summary>
+							<div class="govuk-details__text">
+								<!-- Table or content here -->
+								<table class="govuk-table">
+									<tbody class="govuk-table__body">
+										<tr class="govuk-table__row">
+                     <td class="govuk-table__cell">
+                     The Ingens Melvera, the constitution and official public law of the Royal Federation, has been ratified and will be put into effect promptly.
+                     </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</details>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 
   </main>
-  <script src="/news/news_files/govuk-frontend-5.11.1.min.js.download"></script>
+  <script src="/assets/javascripts/govuk-frontend-5.11.1.min.js"></script>
   <script>
     window.GOVUKFrontend && window.GOVUKFrontend.initAll();
   </script>
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+</body>
+</html>

@@ -4,6 +4,7 @@ const path = require('path');
 
 const app = express();
 
+//START USING npm start -- --port 3000
 // Serve static assets from /public
 app.use(express.static(path.join(__dirname, 'public')));
 
